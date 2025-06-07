@@ -1,0 +1,96 @@
+.contact-bar {
+    position: fixed;
+    top: 40%;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
+    animation: fadeInRight 1s ease-out;
+  }
+  .contact-bar a {
+    background-color: white;
+    color: #000;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .contact-bar a:hover {
+    transform: scale(1.1);
+  }
+  
+  .contact-bar a.whatsapp {
+    color: #25D366;
+  }
+  
+  .contact-bar a.call {
+    color: #007bff;
+  }
+  
+  .contact-bar a.instagram {
+    color: #E1306C;
+  }
+  
+  .contact-bar a.facebook {
+    color: #3b5998;
+  }
+  /* Animate on load */
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.4;
+      transform: scale(1.2);
+    }
+  }
+  
+  .contact-bar {
+    position: fixed;
+    top: 40%;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
+  }
+  
+  .contact-bar a {
+    background-color: white;
+    color: #000;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: blink 2s infinite ease-in-out;
+  }
+  
+  /* Custom colors */
+  .contact-bar a.whatsapp {
+    color: #25D366;
+  }
+  
+  .contact-bar a.call {
+    color: #007bff;
+  }
+  
+  .contact-bar a.instagram {
+    color: #E1306C;
+  }
+  
+  .contact-bar a.facebook {
+    color: #3b5998;
+  }
+  

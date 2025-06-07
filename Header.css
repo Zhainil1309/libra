@@ -1,0 +1,125 @@
+/* General Layout */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #2c1106;
+  color: #f5d28e;
+  font-family: 'Georgia', serif;
+  height: 70px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo */
+.logo img {
+  width: 240px;
+  height: auto;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  font-size: 17px;
+  cursor: pointer;
+  color: #f5d28e;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #f5d28e;
+}
+
+.nav-menu ul li a:hover {
+  color: #ffc107;
+}
+
+/* Contact Button */
+.contact-button a {
+  background-color: #5a2c10;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #f5d28e;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button a:hover {
+  background-color: #7b3f1d;
+}
+
+/* Hamburger Icon */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: #f5d28e;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 980px) {
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #2c1106;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    padding: 10px 0;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+  }
+
+  .nav-menu ul li {
+    font-size: 18px;
+  }
+
+  .contact-button a {
+    margin: 10px auto;
+    display: inline-block;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* Ensure content below navbar is not hidden */
+body {
+  padding-top: 70px;
+  margin: 0;
+}

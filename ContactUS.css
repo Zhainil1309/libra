@@ -1,0 +1,264 @@
+/* Section Title */
+.contact-heading {
+  font-size: 2.5rem;
+  color: #000000;
+  font-weight: 700;
+}
+
+.contact-subtext {
+  color: #000000;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Contact Info Box */
+.contact-info {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-left: 4px solid #17a2b8;
+  border-radius: 8px;
+}
+
+.contact-icon-wrapper {
+  background-color: #17a2b8;
+  padding: 10px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+}
+
+.contact-label {
+  font-weight: 600;
+  color: #17a2b8;
+}
+
+.contact-value {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* Form */
+.contact-form-wrapper {
+  border: 1px solid #ddd;
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-form-wrapper:hover {
+  box-shadow: 0 0 10px rgba(23, 162, 184, 0.3);
+}
+
+.contact-form-wrapper .form-control {
+  border-radius: 8px;
+}
+
+.contact-form-wrapper .btn {
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.contact-form-wrapper .btn:hover {
+  background-color: #138496;
+}
+
+/* Get In Touch Section */
+.get-in-touch-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.get-in-touch-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px 15px;
+  height: 100%; /* Ensures equal height */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.get-in-touch-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Match icon & text alignment */
+.get-in-touch-card .icon {
+  font-size: 1.8rem;
+  color: #17a2b8;
+  margin-bottom: 10px;
+}
+
+.get-in-touch-card h5 {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.get-in-touch-card p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+.row > .col-md-3 {
+  display: flex;
+}
+
+.col-md-3 .get-in-touch-card {
+  flex: 1;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .contact-heading {
+    font-size: 2rem;
+  }
+
+  .get-in-touch-card {
+    margin-bottom: 30px;
+  }
+}
+.contact-main-section {
+  background: linear-gradient(135deg, #000000, #757575); /* Smooth brown gradient */
+  color: #fff;
+  padding: 60px 0;
+}
+
+/* Headings and Subtext */
+.contact-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.contact-subtext {
+  font-size: 1rem;
+  color: #d7ccc8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Contact Info Section */
+.contact-info {
+  color: #e0cfc1;
+}
+
+.contact-icon-wrapper {
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 12px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon {
+  font-size: 1.3rem;
+  color: #ffaf37;
+}
+
+.contact-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffaf37;
+}
+
+.contact-value {
+  color: #f5f5f5;
+  font-size: 0.95rem;
+}
+
+/* Contact Form Styles */
+.contact-form-wrapper {
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.contact-form-wrapper .form-control {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 0.95rem;
+}
+
+.contact-form-wrapper .form-control:focus {
+  border-color: #8d6e63;
+  box-shadow: 0 0 0 0.15rem rgba(141, 110, 99, 0.3);
+}
+
+.form-title {
+  color: #3e2723;
+}
+
+/* Send Button */
+.contact-form-wrapper .btn-info {
+  background-color: #6d4c41;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form-wrapper .btn-info:hover {
+  background-color: #8d6e63;
+}
+.glass-form {
+  background: rgba(30, 30, 30, 0.4); /* translucent black */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(192, 192, 192, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.animated-form {
+  animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(200, 200, 200, 0.3);
+  color: #e0e0e0;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.glass-input::placeholder {
+  color: #999;
+}
+
+.glass-input:focus {
+  border-color: silver;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.btn-silver {
+  background-color: #fff5f5;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-silver:hover {
+  background-color: #202020;
+  transform: scale(1.02);
+}
