@@ -1,0 +1,42 @@
+.slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: #ebe2ec; /* ✅ Very soft light pink */
+  padding: 10px 0;
+}
+
+.slider-content {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.scroll-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.slider-item {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  font-size: 50px;
+  color: #111;
+  font-weight: 600;
+}
+
+.lotus-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  stroke: #111
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
